@@ -1,0 +1,2172 @@
+EESchema Schematic File Version 4
+LIBS:Aurora_electrical_power_system-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Aurora_Parts:DW01A U?
+U 1 1 5DFA79A0
+P 1350 2100
+F 0 "U?" H 1350 2425 50  0000 C CNN
+F 1 "DW01A" H 1350 2334 50  0000 C CNN
+F 2 "" H 1350 1900 50  0001 C CNN
+F 3 "" H 1350 1900 50  0001 C CNN
+	1    1350 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5DFA8A0F
+P 1250 4050
+F 0 "BT?" V 1100 4100 50  0000 C CNN
+F 1 "18650" V 1414 4100 50  0000 C CNN
+F 2 "" V 1250 4110 50  0001 C CNN
+F 3 "~" V 1250 4110 50  0001 C CNN
+	1    1250 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DFA9709
+P 1000 3750
+F 0 "R?" V 1100 3750 50  0000 C CNN
+F 1 "150" V 1000 3750 50  0000 C CNN
+F 2 "" H 1000 3750 50  0001 C CNN
+F 3 "~" H 1000 3750 50  0001 C CNN
+	1    1000 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5DFAA68D
+P 1400 3650
+F 0 "Q?" V 1350 3450 50  0000 C CNN
+F 1 "SLS2302" V 1600 3400 50  0000 C CNN
+F 2 "" H 1600 3750 50  0001 C CNN
+F 3 "~" H 1400 3650 50  0001 C CNN
+	1    1400 3650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1100 3750 1150 3750
+Wire Wire Line
+	900  3750 850  3750
+Wire Wire Line
+	750  3750 750  4050
+Wire Wire Line
+	750  4050 1050 4050
+Wire Wire Line
+	1350 4050 1750 4050
+Wire Wire Line
+	1750 4050 1750 3750
+Wire Wire Line
+	1750 3750 1600 3750
+$Comp
+L Aurora_Parts:HY2213 U?
+U 1 1 5DFAC107
+P 1300 3000
+F 0 "U?" V 1254 3188 50  0000 L CNN
+F 1 "HY2213" V 1345 3188 50  0000 L CNN
+F 2 "" H 1300 2850 50  0001 C CNN
+F 3 "" H 1300 2850 50  0001 C CNN
+	1    1300 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 3300 1400 3450
+$Comp
+L Device:R_Small R?
+U 1 1 5DFAD187
+P 950 2600
+F 0 "R?" V 1050 2600 50  0000 C CNN
+F 1 "100" V 950 2600 50  0000 C CNN
+F 2 "" H 950 2600 50  0001 C CNN
+F 3 "~" H 950 2600 50  0001 C CNN
+	1    950  2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 2700 1300 2600
+Wire Wire Line
+	1300 2600 1050 2600
+Wire Wire Line
+	850  2600 750  2600
+Wire Wire Line
+	750  2600 750  3750
+Connection ~ 750  3750
+$Comp
+L Device:C_Small C?
+U 1 1 5DFADC89
+P 1550 2600
+F 0 "C?" V 1650 2600 50  0000 C CNN
+F 1 "0.1u" V 1450 2600 50  0000 C CNN
+F 2 "" H 1550 2600 50  0001 C CNN
+F 3 "~" H 1550 2600 50  0001 C CNN
+	1    1550 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 2600 1450 2600
+Connection ~ 1300 2600
+Wire Wire Line
+	1650 2600 1750 2600
+Wire Wire Line
+	1750 2600 1750 3750
+Connection ~ 1750 3750
+Wire Wire Line
+	1650 2000 1750 2000
+Wire Wire Line
+	1750 2000 1750 2600
+Connection ~ 1750 2600
+NoConn ~ 1650 2200
+Wire Wire Line
+	1050 2100 950  2100
+Wire Wire Line
+	950  2100 950  1900
+Wire Wire Line
+	950  1900 1750 1900
+Wire Wire Line
+	1750 1900 1750 2000
+Connection ~ 1750 2000
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 5DFB3D23
+P 850 1250
+F 0 "Q?" V 800 1100 50  0000 C CNN
+F 1 "MMBT3906" V 1050 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1050 1175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 850 1250 50  0001 L CNN
+	1    850  1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DFB4F03
+P 1150 800
+F 0 "R?" V 1050 800 50  0000 C CNN
+F 1 "1M" V 1150 800 50  0000 C CNN
+F 2 "" H 1150 800 50  0001 C CNN
+F 3 "~" H 1150 800 50  0001 C CNN
+	1    1150 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DFB5613
+P 850 1650
+F 0 "R?" H 791 1604 50  0000 R CNN
+F 1 "510k" H 791 1695 50  0000 R CNN
+F 2 "" H 850 1650 50  0001 C CNN
+F 3 "~" H 850 1650 50  0001 C CNN
+	1    850  1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	850  1450 850  1550
+Wire Wire Line
+	850  1750 850  2000
+Wire Wire Line
+	850  2000 1050 2000
+Wire Wire Line
+	650  1150 600  1150
+Wire Wire Line
+	600  1150 600  800 
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 5DFB744D
+P 1450 1250
+F 0 "Q?" V 1400 1400 50  0000 C CNN
+F 1 "MMBT3906" V 1650 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1650 1175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 1450 1250 50  0001 L CNN
+	1    1450 1250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DFB9A02
+P 1450 1650
+F 0 "R?" H 1391 1604 50  0000 R CNN
+F 1 "510k" H 1391 1695 50  0000 R CNN
+F 2 "" H 1450 1650 50  0001 C CNN
+F 3 "~" H 1450 1650 50  0001 C CNN
+	1    1450 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 1450 1450 1550
+Wire Wire Line
+	1050 2200 750  2200
+Wire Wire Line
+	750  2200 750  1800
+Wire Wire Line
+	750  1800 1450 1800
+Wire Wire Line
+	1450 1800 1450 1750
+Wire Wire Line
+	1050 1150 1150 1150
+Wire Wire Line
+	600  800  1050 800 
+Wire Wire Line
+	1150 1150 1150 1500
+Wire Wire Line
+	1150 1500 650  1500
+Connection ~ 1150 1150
+Wire Wire Line
+	1150 1150 1250 1150
+Connection ~ 750  2600
+Wire Wire Line
+	1700 950  1700 1150
+Wire Wire Line
+	1700 1150 1650 1150
+$Comp
+L Device:R_Small R?
+U 1 1 5E0FFD33
+P 1000 3600
+F 0 "R?" V 900 3600 50  0000 C CNN
+F 1 "150" V 1000 3600 50  0000 C CNN
+F 2 "" H 1000 3600 50  0001 C CNN
+F 3 "~" H 1000 3600 50  0001 C CNN
+	1    1000 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 3600 1150 3600
+Wire Wire Line
+	1150 3600 1150 3750
+Connection ~ 1150 3750
+Wire Wire Line
+	1150 3750 1200 3750
+Wire Wire Line
+	900  3600 850  3600
+Wire Wire Line
+	850  3600 850  3750
+Connection ~ 850  3750
+Wire Wire Line
+	850  3750 750  3750
+$Comp
+L Device:R_Small R?
+U 1 1 5E134443
+P 950 2450
+F 0 "R?" V 900 2350 50  0000 C CNN
+F 1 "100" V 950 2450 50  0000 C CNN
+F 2 "" H 950 2450 50  0001 C CNN
+F 3 "~" H 950 2450 50  0001 C CNN
+	1    950  2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 2100 1700 2100
+Wire Wire Line
+	1700 2100 1700 2350
+Wire Wire Line
+	1700 2450 1050 2450
+Wire Wire Line
+	850  2450 750  2450
+Wire Wire Line
+	750  2450 750  2600
+Wire Wire Line
+	750  2600 650  2600
+Wire Wire Line
+	650  1500 650  2600
+$Comp
+L Device:C_Small C?
+U 1 1 5E189E52
+P 1350 2350
+F 0 "C?" V 1400 2250 50  0000 C CNN
+F 1 "0.1u" V 1300 2500 50  0000 C CNN
+F 2 "" H 1350 2350 50  0001 C CNN
+F 3 "~" H 1350 2350 50  0001 C CNN
+	1    1350 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 2350 1700 2350
+Connection ~ 1700 2350
+Wire Wire Line
+	1700 2350 1700 2450
+Wire Wire Line
+	1250 2350 950  2350
+Wire Wire Line
+	950  2350 950  2100
+Connection ~ 950  2100
+$Comp
+L Aurora_Parts:DW01A U?
+U 1 1 5E1CAEEE
+P 2650 2100
+F 0 "U?" H 2650 2425 50  0000 C CNN
+F 1 "DW01A" H 2650 2334 50  0000 C CNN
+F 2 "" H 2650 1900 50  0001 C CNN
+F 3 "" H 2650 1900 50  0001 C CNN
+	1    2650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5E1CAEF8
+P 2550 4050
+F 0 "BT?" V 2400 4100 50  0000 C CNN
+F 1 "18650" V 2714 4100 50  0000 C CNN
+F 2 "" V 2550 4110 50  0001 C CNN
+F 3 "~" V 2550 4110 50  0001 C CNN
+	1    2550 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E1CAF02
+P 2300 3750
+F 0 "R?" V 2400 3750 50  0000 C CNN
+F 1 "150" V 2300 3750 50  0000 C CNN
+F 2 "" H 2300 3750 50  0001 C CNN
+F 3 "~" H 2300 3750 50  0001 C CNN
+	1    2300 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5E1CAF0C
+P 2700 3650
+F 0 "Q?" V 2650 3450 50  0000 C CNN
+F 1 "SLS2302" V 2900 3400 50  0000 C CNN
+F 2 "" H 2900 3750 50  0001 C CNN
+F 3 "~" H 2700 3650 50  0001 C CNN
+	1    2700 3650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2400 3750 2450 3750
+Wire Wire Line
+	2200 3750 2150 3750
+Wire Wire Line
+	2050 3750 2050 4050
+Wire Wire Line
+	2050 4050 2350 4050
+Wire Wire Line
+	2650 4050 3050 4050
+Wire Wire Line
+	3050 4050 3050 3750
+Wire Wire Line
+	3050 3750 2900 3750
+$Comp
+L Aurora_Parts:HY2213 U?
+U 1 1 5E1CAF1D
+P 2600 3000
+F 0 "U?" V 2554 3188 50  0000 L CNN
+F 1 "HY2213" V 2645 3188 50  0000 L CNN
+F 2 "" H 2600 2850 50  0001 C CNN
+F 3 "" H 2600 2850 50  0001 C CNN
+	1    2600 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 3300 2700 3450
+$Comp
+L Device:R_Small R?
+U 1 1 5E1CAF28
+P 2250 2600
+F 0 "R?" V 2350 2600 50  0000 C CNN
+F 1 "100" V 2250 2600 50  0000 C CNN
+F 2 "" H 2250 2600 50  0001 C CNN
+F 3 "~" H 2250 2600 50  0001 C CNN
+	1    2250 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 2700 2600 2600
+Wire Wire Line
+	2600 2600 2350 2600
+Wire Wire Line
+	2150 2600 2050 2600
+Wire Wire Line
+	2050 2600 2050 3750
+Connection ~ 2050 3750
+$Comp
+L Device:C_Small C?
+U 1 1 5E1CAF37
+P 2850 2600
+F 0 "C?" V 2950 2600 50  0000 C CNN
+F 1 "0.1u" V 2750 2600 50  0000 C CNN
+F 2 "" H 2850 2600 50  0001 C CNN
+F 3 "~" H 2850 2600 50  0001 C CNN
+	1    2850 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 2600 2750 2600
+Connection ~ 2600 2600
+Wire Wire Line
+	2950 2600 3050 2600
+Wire Wire Line
+	3050 2600 3050 3750
+Connection ~ 3050 3750
+Wire Wire Line
+	2950 2000 3050 2000
+Wire Wire Line
+	3050 2000 3050 2600
+Connection ~ 3050 2600
+NoConn ~ 2950 2200
+Wire Wire Line
+	2350 2100 2250 2100
+Wire Wire Line
+	2250 2100 2250 1900
+Wire Wire Line
+	2250 1900 3050 1900
+Wire Wire Line
+	3050 1900 3050 2000
+Connection ~ 3050 2000
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 5E1CAF4F
+P 2150 1250
+F 0 "Q?" V 2100 1100 50  0000 C CNN
+F 1 "MMBT3906" V 2350 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2350 1175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 2150 1250 50  0001 L CNN
+	1    2150 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E1CAF59
+P 2450 800
+F 0 "R?" V 2350 800 50  0000 C CNN
+F 1 "1M" V 2450 800 50  0000 C CNN
+F 2 "" H 2450 800 50  0001 C CNN
+F 3 "~" H 2450 800 50  0001 C CNN
+	1    2450 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E1CAF63
+P 2150 1650
+F 0 "R?" H 2091 1604 50  0000 R CNN
+F 1 "510k" H 2091 1695 50  0000 R CNN
+F 2 "" H 2150 1650 50  0001 C CNN
+F 3 "~" H 2150 1650 50  0001 C CNN
+	1    2150 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 1450 2150 1550
+Wire Wire Line
+	2150 1750 2150 2000
+Wire Wire Line
+	2150 2000 2350 2000
+Wire Wire Line
+	1950 1150 1900 1150
+Wire Wire Line
+	1900 1150 1900 800 
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 5E1CAF72
+P 2750 1250
+F 0 "Q?" V 2700 1400 50  0000 C CNN
+F 1 "MMBT3906" V 2950 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2950 1175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 2750 1250 50  0001 L CNN
+	1    2750 1250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E1CAF7C
+P 2750 1650
+F 0 "R?" H 2691 1604 50  0000 R CNN
+F 1 "510k" H 2691 1695 50  0000 R CNN
+F 2 "" H 2750 1650 50  0001 C CNN
+F 3 "~" H 2750 1650 50  0001 C CNN
+	1    2750 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2750 1450 2750 1550
+Wire Wire Line
+	2350 2200 2050 2200
+Wire Wire Line
+	2050 2200 2050 1800
+Wire Wire Line
+	2050 1800 2750 1800
+Wire Wire Line
+	2750 1800 2750 1750
+Wire Wire Line
+	2350 1150 2450 1150
+Wire Wire Line
+	1900 800  2350 800 
+Wire Wire Line
+	2450 1150 2450 1500
+Wire Wire Line
+	2450 1500 1950 1500
+Connection ~ 2450 1150
+Wire Wire Line
+	2450 1150 2550 1150
+Connection ~ 2050 2600
+Wire Wire Line
+	3000 950  3000 1150
+Wire Wire Line
+	3000 1150 2950 1150
+$Comp
+L Device:R_Small R?
+U 1 1 5E1CAF94
+P 2300 3600
+F 0 "R?" V 2200 3600 50  0000 C CNN
+F 1 "150" V 2300 3600 50  0000 C CNN
+F 2 "" H 2300 3600 50  0001 C CNN
+F 3 "~" H 2300 3600 50  0001 C CNN
+	1    2300 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 3600 2450 3600
+Wire Wire Line
+	2450 3600 2450 3750
+Connection ~ 2450 3750
+Wire Wire Line
+	2450 3750 2500 3750
+Wire Wire Line
+	2200 3600 2150 3600
+Wire Wire Line
+	2150 3600 2150 3750
+Connection ~ 2150 3750
+Wire Wire Line
+	2150 3750 2050 3750
+$Comp
+L Device:R_Small R?
+U 1 1 5E1CAFA6
+P 2250 2450
+F 0 "R?" V 2200 2350 50  0000 C CNN
+F 1 "100" V 2250 2450 50  0000 C CNN
+F 2 "" H 2250 2450 50  0001 C CNN
+F 3 "~" H 2250 2450 50  0001 C CNN
+	1    2250 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 2100 3000 2100
+Wire Wire Line
+	3000 2100 3000 2350
+Wire Wire Line
+	3000 2450 2350 2450
+Wire Wire Line
+	2150 2450 2050 2450
+Wire Wire Line
+	2050 2450 2050 2600
+Wire Wire Line
+	2050 2600 1950 2600
+Wire Wire Line
+	1950 1500 1950 2600
+$Comp
+L Device:C_Small C?
+U 1 1 5E1CAFB7
+P 2650 2350
+F 0 "C?" V 2700 2250 50  0000 C CNN
+F 1 "0.1u" V 2600 2500 50  0000 C CNN
+F 2 "" H 2650 2350 50  0001 C CNN
+F 3 "~" H 2650 2350 50  0001 C CNN
+	1    2650 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 2350 3000 2350
+Connection ~ 3000 2350
+Wire Wire Line
+	3000 2350 3000 2450
+Wire Wire Line
+	2550 2350 2250 2350
+Wire Wire Line
+	2250 2350 2250 2100
+Connection ~ 2250 2100
+Wire Wire Line
+	1250 800  1900 800 
+Connection ~ 1900 800 
+$Comp
+L Device:R_Small R?
+U 1 1 5E1FE972
+P 2450 950
+F 0 "R?" V 2350 950 50  0000 C CNN
+F 1 "1M" V 2450 950 50  0000 C CNN
+F 2 "" H 2450 950 50  0001 C CNN
+F 3 "~" H 2450 950 50  0001 C CNN
+	1    2450 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 950  2350 950 
+Wire Wire Line
+	2550 950  3000 950 
+$Comp
+L Aurora_Parts:DW01A U?
+U 1 1 5E2061D7
+P 3950 2100
+F 0 "U?" H 3950 2425 50  0000 C CNN
+F 1 "DW01A" H 3950 2334 50  0000 C CNN
+F 2 "" H 3950 1900 50  0001 C CNN
+F 3 "" H 3950 1900 50  0001 C CNN
+	1    3950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5E2061E1
+P 3850 4050
+F 0 "BT?" V 3700 4100 50  0000 C CNN
+F 1 "18650" V 4014 4100 50  0000 C CNN
+F 2 "" V 3850 4110 50  0001 C CNN
+F 3 "~" V 3850 4110 50  0001 C CNN
+	1    3850 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E2061EB
+P 3600 3750
+F 0 "R?" V 3700 3750 50  0000 C CNN
+F 1 "150" V 3600 3750 50  0000 C CNN
+F 2 "" H 3600 3750 50  0001 C CNN
+F 3 "~" H 3600 3750 50  0001 C CNN
+	1    3600 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5E2061F5
+P 4000 3650
+F 0 "Q?" V 3950 3450 50  0000 C CNN
+F 1 "SLS2302" V 4200 3400 50  0000 C CNN
+F 2 "" H 4200 3750 50  0001 C CNN
+F 3 "~" H 4000 3650 50  0001 C CNN
+	1    4000 3650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3700 3750 3750 3750
+Wire Wire Line
+	3500 3750 3450 3750
+Wire Wire Line
+	3350 3750 3350 4050
+Wire Wire Line
+	3350 4050 3650 4050
+Wire Wire Line
+	3950 4050 4350 4050
+Wire Wire Line
+	4350 4050 4350 3750
+Wire Wire Line
+	4350 3750 4200 3750
+$Comp
+L Aurora_Parts:HY2213 U?
+U 1 1 5E206206
+P 3900 3000
+F 0 "U?" V 3854 3188 50  0000 L CNN
+F 1 "HY2213" V 3945 3188 50  0000 L CNN
+F 2 "" H 3900 2850 50  0001 C CNN
+F 3 "" H 3900 2850 50  0001 C CNN
+	1    3900 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 3300 4000 3450
+$Comp
+L Device:R_Small R?
+U 1 1 5E206211
+P 3550 2600
+F 0 "R?" V 3650 2600 50  0000 C CNN
+F 1 "100" V 3550 2600 50  0000 C CNN
+F 2 "" H 3550 2600 50  0001 C CNN
+F 3 "~" H 3550 2600 50  0001 C CNN
+	1    3550 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 2700 3900 2600
+Wire Wire Line
+	3900 2600 3650 2600
+Wire Wire Line
+	3450 2600 3350 2600
+Wire Wire Line
+	3350 2600 3350 3750
+Connection ~ 3350 3750
+$Comp
+L Device:C_Small C?
+U 1 1 5E206220
+P 4150 2600
+F 0 "C?" V 4250 2600 50  0000 C CNN
+F 1 "0.1u" V 4050 2600 50  0000 C CNN
+F 2 "" H 4150 2600 50  0001 C CNN
+F 3 "~" H 4150 2600 50  0001 C CNN
+	1    4150 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 2600 4050 2600
+Connection ~ 3900 2600
+Wire Wire Line
+	4250 2600 4350 2600
+Wire Wire Line
+	4350 2600 4350 3750
+Connection ~ 4350 3750
+Wire Wire Line
+	4250 2000 4350 2000
+Wire Wire Line
+	4350 2000 4350 2600
+Connection ~ 4350 2600
+NoConn ~ 4250 2200
+Wire Wire Line
+	3650 2100 3550 2100
+Wire Wire Line
+	3550 2100 3550 1900
+Wire Wire Line
+	3550 1900 4350 1900
+Wire Wire Line
+	4350 1900 4350 2000
+Connection ~ 4350 2000
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 5E206238
+P 3450 1250
+F 0 "Q?" V 3400 1100 50  0000 C CNN
+F 1 "MMBT3906" V 3650 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3650 1175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 3450 1250 50  0001 L CNN
+	1    3450 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E206242
+P 3750 800
+F 0 "R?" V 3650 800 50  0000 C CNN
+F 1 "1M" V 3750 800 50  0000 C CNN
+F 2 "" H 3750 800 50  0001 C CNN
+F 3 "~" H 3750 800 50  0001 C CNN
+	1    3750 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E20624C
+P 3450 1650
+F 0 "R?" H 3391 1604 50  0000 R CNN
+F 1 "510k" H 3391 1695 50  0000 R CNN
+F 2 "" H 3450 1650 50  0001 C CNN
+F 3 "~" H 3450 1650 50  0001 C CNN
+	1    3450 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 1450 3450 1550
+Wire Wire Line
+	3450 1750 3450 2000
+Wire Wire Line
+	3450 2000 3650 2000
+Wire Wire Line
+	3250 1150 3200 1150
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 5E20625B
+P 4050 1250
+F 0 "Q?" V 4000 1400 50  0000 C CNN
+F 1 "MMBT3906" V 4250 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4250 1175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 4050 1250 50  0001 L CNN
+	1    4050 1250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E206265
+P 4050 1650
+F 0 "R?" H 3991 1604 50  0000 R CNN
+F 1 "510k" H 3991 1695 50  0000 R CNN
+F 2 "" H 4050 1650 50  0001 C CNN
+F 3 "~" H 4050 1650 50  0001 C CNN
+	1    4050 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 1450 4050 1550
+Wire Wire Line
+	3650 2200 3350 2200
+Wire Wire Line
+	3350 2200 3350 1800
+Wire Wire Line
+	3350 1800 4050 1800
+Wire Wire Line
+	4050 1800 4050 1750
+Wire Wire Line
+	3650 1150 3750 1150
+Wire Wire Line
+	3200 800  3650 800 
+Wire Wire Line
+	3750 1150 3750 1500
+Wire Wire Line
+	3750 1500 3250 1500
+Connection ~ 3750 1150
+Wire Wire Line
+	3750 1150 3850 1150
+Connection ~ 3350 2600
+Wire Wire Line
+	4300 950  4300 1150
+Wire Wire Line
+	4300 1150 4250 1150
+$Comp
+L Device:R_Small R?
+U 1 1 5E20627D
+P 3600 3600
+F 0 "R?" V 3500 3600 50  0000 C CNN
+F 1 "150" V 3600 3600 50  0000 C CNN
+F 2 "" H 3600 3600 50  0001 C CNN
+F 3 "~" H 3600 3600 50  0001 C CNN
+	1    3600 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 3600 3750 3600
+Wire Wire Line
+	3750 3600 3750 3750
+Connection ~ 3750 3750
+Wire Wire Line
+	3750 3750 3800 3750
+Wire Wire Line
+	3500 3600 3450 3600
+Wire Wire Line
+	3450 3600 3450 3750
+Connection ~ 3450 3750
+Wire Wire Line
+	3450 3750 3350 3750
+$Comp
+L Device:R_Small R?
+U 1 1 5E20628F
+P 3550 2450
+F 0 "R?" V 3500 2350 50  0000 C CNN
+F 1 "100" V 3550 2450 50  0000 C CNN
+F 2 "" H 3550 2450 50  0001 C CNN
+F 3 "~" H 3550 2450 50  0001 C CNN
+	1    3550 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 2100 4300 2100
+Wire Wire Line
+	4300 2100 4300 2350
+Wire Wire Line
+	4300 2450 3650 2450
+Wire Wire Line
+	3450 2450 3350 2450
+Wire Wire Line
+	3350 2450 3350 2600
+Wire Wire Line
+	3350 2600 3250 2600
+Wire Wire Line
+	3250 1500 3250 2600
+$Comp
+L Device:C_Small C?
+U 1 1 5E2062A0
+P 3950 2350
+F 0 "C?" V 4000 2250 50  0000 C CNN
+F 1 "0.1u" V 3900 2500 50  0000 C CNN
+F 2 "" H 3950 2350 50  0001 C CNN
+F 3 "~" H 3950 2350 50  0001 C CNN
+	1    3950 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 2350 4300 2350
+Connection ~ 4300 2350
+Wire Wire Line
+	4300 2350 4300 2450
+Wire Wire Line
+	3850 2350 3550 2350
+Wire Wire Line
+	3550 2350 3550 2100
+Connection ~ 3550 2100
+$Comp
+L Aurora_Parts:DW01A U?
+U 1 1 5E2062B0
+P 5250 2100
+F 0 "U?" H 5250 2425 50  0000 C CNN
+F 1 "DW01A" H 5250 2334 50  0000 C CNN
+F 2 "" H 5250 1900 50  0001 C CNN
+F 3 "" H 5250 1900 50  0001 C CNN
+	1    5250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5E2062BA
+P 5150 4050
+F 0 "BT?" V 5000 4100 50  0000 C CNN
+F 1 "18650" V 5314 4100 50  0000 C CNN
+F 2 "" V 5150 4110 50  0001 C CNN
+F 3 "~" V 5150 4110 50  0001 C CNN
+	1    5150 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E2062C4
+P 4900 3750
+F 0 "R?" V 5000 3750 50  0000 C CNN
+F 1 "150" V 4900 3750 50  0000 C CNN
+F 2 "" H 4900 3750 50  0001 C CNN
+F 3 "~" H 4900 3750 50  0001 C CNN
+	1    4900 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5E2062CE
+P 5300 3650
+F 0 "Q?" V 5250 3450 50  0000 C CNN
+F 1 "SLS2302" V 5500 3400 50  0000 C CNN
+F 2 "" H 5500 3750 50  0001 C CNN
+F 3 "~" H 5300 3650 50  0001 C CNN
+	1    5300 3650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5000 3750 5050 3750
+Wire Wire Line
+	4800 3750 4750 3750
+Wire Wire Line
+	4650 3750 4650 4050
+Wire Wire Line
+	4650 4050 4950 4050
+Wire Wire Line
+	5250 4050 5650 4050
+Wire Wire Line
+	5650 4050 5650 3750
+Wire Wire Line
+	5650 3750 5500 3750
+$Comp
+L Aurora_Parts:HY2213 U?
+U 1 1 5E2062DF
+P 5200 3000
+F 0 "U?" V 5154 3188 50  0000 L CNN
+F 1 "HY2213" V 5245 3188 50  0000 L CNN
+F 2 "" H 5200 2850 50  0001 C CNN
+F 3 "" H 5200 2850 50  0001 C CNN
+	1    5200 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 3300 5300 3450
+$Comp
+L Device:R_Small R?
+U 1 1 5E2062EA
+P 4850 2600
+F 0 "R?" V 4950 2600 50  0000 C CNN
+F 1 "100" V 4850 2600 50  0000 C CNN
+F 2 "" H 4850 2600 50  0001 C CNN
+F 3 "~" H 4850 2600 50  0001 C CNN
+	1    4850 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 2700 5200 2600
+Wire Wire Line
+	5200 2600 4950 2600
+Wire Wire Line
+	4750 2600 4650 2600
+Wire Wire Line
+	4650 2600 4650 3750
+Connection ~ 4650 3750
+$Comp
+L Device:C_Small C?
+U 1 1 5E2062F9
+P 5450 2600
+F 0 "C?" V 5550 2600 50  0000 C CNN
+F 1 "0.1u" V 5350 2600 50  0000 C CNN
+F 2 "" H 5450 2600 50  0001 C CNN
+F 3 "~" H 5450 2600 50  0001 C CNN
+	1    5450 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 2600 5350 2600
+Connection ~ 5200 2600
+Wire Wire Line
+	5550 2600 5650 2600
+Wire Wire Line
+	5650 2600 5650 3750
+Connection ~ 5650 3750
+Wire Wire Line
+	5550 2000 5650 2000
+Wire Wire Line
+	5650 2000 5650 2600
+Connection ~ 5650 2600
+NoConn ~ 5550 2200
+Wire Wire Line
+	4950 2100 4850 2100
+Wire Wire Line
+	4850 2100 4850 1900
+Wire Wire Line
+	4850 1900 5650 1900
+Wire Wire Line
+	5650 1900 5650 2000
+Connection ~ 5650 2000
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 5E206311
+P 4750 1250
+F 0 "Q?" V 4700 1100 50  0000 C CNN
+F 1 "MMBT3906" V 4950 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4950 1175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 4750 1250 50  0001 L CNN
+	1    4750 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E20631B
+P 5050 800
+F 0 "R?" V 4950 800 50  0000 C CNN
+F 1 "1M" V 5050 800 50  0000 C CNN
+F 2 "" H 5050 800 50  0001 C CNN
+F 3 "~" H 5050 800 50  0001 C CNN
+	1    5050 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E206325
+P 4750 1650
+F 0 "R?" H 4691 1604 50  0000 R CNN
+F 1 "510k" H 4691 1695 50  0000 R CNN
+F 2 "" H 4750 1650 50  0001 C CNN
+F 3 "~" H 4750 1650 50  0001 C CNN
+	1    4750 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 1450 4750 1550
+Wire Wire Line
+	4750 1750 4750 2000
+Wire Wire Line
+	4750 2000 4950 2000
+Wire Wire Line
+	4550 1150 4500 1150
+Wire Wire Line
+	4500 1150 4500 800 
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 5E206334
+P 5350 1250
+F 0 "Q?" V 5300 1400 50  0000 C CNN
+F 1 "MMBT3906" V 5550 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5550 1175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 5350 1250 50  0001 L CNN
+	1    5350 1250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E20633E
+P 5350 1650
+F 0 "R?" H 5291 1604 50  0000 R CNN
+F 1 "510k" H 5291 1695 50  0000 R CNN
+F 2 "" H 5350 1650 50  0001 C CNN
+F 3 "~" H 5350 1650 50  0001 C CNN
+	1    5350 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 1450 5350 1550
+Wire Wire Line
+	4950 2200 4650 2200
+Wire Wire Line
+	4650 2200 4650 1800
+Wire Wire Line
+	4650 1800 5350 1800
+Wire Wire Line
+	5350 1800 5350 1750
+Wire Wire Line
+	4950 1150 5050 1150
+Wire Wire Line
+	4500 800  4950 800 
+Wire Wire Line
+	5050 1150 5050 1500
+Wire Wire Line
+	5050 1500 4550 1500
+Connection ~ 5050 1150
+Wire Wire Line
+	5050 1150 5150 1150
+Connection ~ 4650 2600
+Wire Wire Line
+	5600 950  5600 1150
+Wire Wire Line
+	5600 1150 5550 1150
+$Comp
+L Device:R_Small R?
+U 1 1 5E206356
+P 4900 3600
+F 0 "R?" V 4800 3600 50  0000 C CNN
+F 1 "150" V 4900 3600 50  0000 C CNN
+F 2 "" H 4900 3600 50  0001 C CNN
+F 3 "~" H 4900 3600 50  0001 C CNN
+	1    4900 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3600 5050 3600
+Wire Wire Line
+	5050 3600 5050 3750
+Connection ~ 5050 3750
+Wire Wire Line
+	5050 3750 5100 3750
+Wire Wire Line
+	4800 3600 4750 3600
+Wire Wire Line
+	4750 3600 4750 3750
+Connection ~ 4750 3750
+Wire Wire Line
+	4750 3750 4650 3750
+$Comp
+L Device:R_Small R?
+U 1 1 5E206368
+P 4850 2450
+F 0 "R?" V 4800 2350 50  0000 C CNN
+F 1 "100" V 4850 2450 50  0000 C CNN
+F 2 "" H 4850 2450 50  0001 C CNN
+F 3 "~" H 4850 2450 50  0001 C CNN
+	1    4850 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 2100 5600 2100
+Wire Wire Line
+	5600 2100 5600 2350
+Wire Wire Line
+	5600 2450 4950 2450
+Wire Wire Line
+	4750 2450 4650 2450
+Wire Wire Line
+	4650 2450 4650 2600
+Wire Wire Line
+	4650 2600 4550 2600
+Wire Wire Line
+	4550 1500 4550 2600
+$Comp
+L Device:C_Small C?
+U 1 1 5E206379
+P 5250 2350
+F 0 "C?" V 5300 2250 50  0000 C CNN
+F 1 "0.1u" V 5200 2500 50  0000 C CNN
+F 2 "" H 5250 2350 50  0001 C CNN
+F 3 "~" H 5250 2350 50  0001 C CNN
+	1    5250 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 2350 5600 2350
+Connection ~ 5600 2350
+Wire Wire Line
+	5600 2350 5600 2450
+Wire Wire Line
+	5150 2350 4850 2350
+Wire Wire Line
+	4850 2350 4850 2100
+Connection ~ 4850 2100
+$Comp
+L Device:R_Small R?
+U 1 1 5E206389
+P 5900 950
+F 0 "R?" V 5800 950 50  0000 C CNN
+F 1 "1M" V 5900 950 50  0000 C CNN
+F 2 "" H 5900 950 50  0001 C CNN
+F 3 "~" H 5900 950 50  0001 C CNN
+	1    5900 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 950  5800 950 
+Wire Wire Line
+	3850 800  4500 800 
+Connection ~ 4500 800 
+$Comp
+L Device:R_Small R?
+U 1 1 5E206396
+P 5050 950
+F 0 "R?" V 4950 950 50  0000 C CNN
+F 1 "1M" V 5050 950 50  0000 C CNN
+F 2 "" H 5050 950 50  0001 C CNN
+F 3 "~" H 5050 950 50  0001 C CNN
+	1    5050 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 950  4950 950 
+Wire Wire Line
+	5150 950  5600 950 
+Connection ~ 5600 950 
+Wire Wire Line
+	3200 800  3200 1150
+Wire Wire Line
+	2550 800  3200 800 
+Connection ~ 3200 800 
+$Comp
+L Device:R_Small R?
+U 1 1 5E269B93
+P 3750 950
+F 0 "R?" V 3650 950 50  0000 C CNN
+F 1 "1M" V 3750 950 50  0000 C CNN
+F 2 "" H 3750 950 50  0001 C CNN
+F 3 "~" H 3750 950 50  0001 C CNN
+	1    3750 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 950  3650 950 
+Connection ~ 3000 950 
+Wire Wire Line
+	3850 950  4300 950 
+Connection ~ 4300 950 
+$Comp
+L Aurora_Parts:DW01A U?
+U 1 1 5E2827C0
+P 6550 2100
+F 0 "U?" H 6550 2425 50  0000 C CNN
+F 1 "DW01A" H 6550 2334 50  0000 C CNN
+F 2 "" H 6550 1900 50  0001 C CNN
+F 3 "" H 6550 1900 50  0001 C CNN
+	1    6550 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5E2827CA
+P 6450 4050
+F 0 "BT?" V 6300 4100 50  0000 C CNN
+F 1 "18650" V 6614 4100 50  0000 C CNN
+F 2 "" V 6450 4110 50  0001 C CNN
+F 3 "~" V 6450 4110 50  0001 C CNN
+	1    6450 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E2827D4
+P 6200 3750
+F 0 "R?" V 6300 3750 50  0000 C CNN
+F 1 "150" V 6200 3750 50  0000 C CNN
+F 2 "" H 6200 3750 50  0001 C CNN
+F 3 "~" H 6200 3750 50  0001 C CNN
+	1    6200 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5E2827DE
+P 6600 3650
+F 0 "Q?" V 6550 3450 50  0000 C CNN
+F 1 "SLS2302" V 6800 3400 50  0000 C CNN
+F 2 "" H 6800 3750 50  0001 C CNN
+F 3 "~" H 6600 3650 50  0001 C CNN
+	1    6600 3650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6300 3750 6350 3750
+Wire Wire Line
+	6100 3750 6050 3750
+Wire Wire Line
+	5950 3750 5950 4050
+Wire Wire Line
+	5950 4050 6250 4050
+Wire Wire Line
+	6550 4050 6950 4050
+Wire Wire Line
+	6950 4050 6950 3750
+Wire Wire Line
+	6950 3750 6800 3750
+$Comp
+L Aurora_Parts:HY2213 U?
+U 1 1 5E2827EF
+P 6500 3000
+F 0 "U?" V 6454 3188 50  0000 L CNN
+F 1 "HY2213" V 6545 3188 50  0000 L CNN
+F 2 "" H 6500 2850 50  0001 C CNN
+F 3 "" H 6500 2850 50  0001 C CNN
+	1    6500 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 3300 6600 3450
+$Comp
+L Device:R_Small R?
+U 1 1 5E2827FA
+P 6150 2600
+F 0 "R?" V 6250 2600 50  0000 C CNN
+F 1 "100" V 6150 2600 50  0000 C CNN
+F 2 "" H 6150 2600 50  0001 C CNN
+F 3 "~" H 6150 2600 50  0001 C CNN
+	1    6150 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 2700 6500 2600
+Wire Wire Line
+	6500 2600 6250 2600
+Wire Wire Line
+	6050 2600 5950 2600
+Wire Wire Line
+	5950 2600 5950 3750
+Connection ~ 5950 3750
+$Comp
+L Device:C_Small C?
+U 1 1 5E282809
+P 6750 2600
+F 0 "C?" V 6850 2600 50  0000 C CNN
+F 1 "0.1u" V 6650 2600 50  0000 C CNN
+F 2 "" H 6750 2600 50  0001 C CNN
+F 3 "~" H 6750 2600 50  0001 C CNN
+	1    6750 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 2600 6650 2600
+Connection ~ 6500 2600
+Wire Wire Line
+	6850 2600 6950 2600
+Wire Wire Line
+	6950 2600 6950 3750
+Connection ~ 6950 3750
+Wire Wire Line
+	6850 2000 6950 2000
+Wire Wire Line
+	6950 2000 6950 2600
+Connection ~ 6950 2600
+NoConn ~ 6850 2200
+Wire Wire Line
+	6250 2100 6150 2100
+Wire Wire Line
+	6150 2100 6150 1900
+Wire Wire Line
+	6150 1900 6950 1900
+Wire Wire Line
+	6950 1900 6950 2000
+Connection ~ 6950 2000
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 5E282821
+P 6050 1250
+F 0 "Q?" V 6000 1100 50  0000 C CNN
+F 1 "MMBT3906" V 6250 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6250 1175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 6050 1250 50  0001 L CNN
+	1    6050 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E28282B
+P 6350 800
+F 0 "R?" V 6250 800 50  0000 C CNN
+F 1 "1M" V 6350 800 50  0000 C CNN
+F 2 "" H 6350 800 50  0001 C CNN
+F 3 "~" H 6350 800 50  0001 C CNN
+	1    6350 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E282835
+P 6050 1650
+F 0 "R?" H 5991 1604 50  0000 R CNN
+F 1 "510k" H 5991 1695 50  0000 R CNN
+F 2 "" H 6050 1650 50  0001 C CNN
+F 3 "~" H 6050 1650 50  0001 C CNN
+	1    6050 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 1450 6050 1550
+Wire Wire Line
+	6050 1750 6050 2000
+Wire Wire Line
+	6050 2000 6250 2000
+Wire Wire Line
+	5850 1150 5800 1150
+Wire Wire Line
+	5800 1150 5800 950 
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 5E282844
+P 6650 1250
+F 0 "Q?" V 6600 1400 50  0000 C CNN
+F 1 "MMBT3906" V 6850 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6850 1175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 6650 1250 50  0001 L CNN
+	1    6650 1250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E28284E
+P 6650 1650
+F 0 "R?" H 6591 1604 50  0000 R CNN
+F 1 "510k" H 6591 1695 50  0000 R CNN
+F 2 "" H 6650 1650 50  0001 C CNN
+F 3 "~" H 6650 1650 50  0001 C CNN
+	1    6650 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6650 1450 6650 1550
+Wire Wire Line
+	6250 2200 5950 2200
+Wire Wire Line
+	5950 2200 5950 1800
+Wire Wire Line
+	5950 1800 6650 1800
+Wire Wire Line
+	6650 1800 6650 1750
+Wire Wire Line
+	6250 1150 6350 1150
+Wire Wire Line
+	5800 800  6250 800 
+Wire Wire Line
+	6350 1150 6350 1500
+Wire Wire Line
+	6350 1500 5850 1500
+Connection ~ 6350 1150
+Wire Wire Line
+	6350 1150 6450 1150
+Connection ~ 5950 2600
+Wire Wire Line
+	6900 950  6900 1150
+Wire Wire Line
+	6900 1150 6850 1150
+$Comp
+L Device:R_Small R?
+U 1 1 5E282866
+P 6200 3600
+F 0 "R?" V 6100 3600 50  0000 C CNN
+F 1 "150" V 6200 3600 50  0000 C CNN
+F 2 "" H 6200 3600 50  0001 C CNN
+F 3 "~" H 6200 3600 50  0001 C CNN
+	1    6200 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 3600 6350 3600
+Wire Wire Line
+	6350 3600 6350 3750
+Connection ~ 6350 3750
+Wire Wire Line
+	6350 3750 6400 3750
+Wire Wire Line
+	6100 3600 6050 3600
+Wire Wire Line
+	6050 3600 6050 3750
+Connection ~ 6050 3750
+Wire Wire Line
+	6050 3750 5950 3750
+$Comp
+L Device:R_Small R?
+U 1 1 5E282878
+P 6150 2450
+F 0 "R?" V 6100 2350 50  0000 C CNN
+F 1 "100" V 6150 2450 50  0000 C CNN
+F 2 "" H 6150 2450 50  0001 C CNN
+F 3 "~" H 6150 2450 50  0001 C CNN
+	1    6150 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 2100 6900 2100
+Wire Wire Line
+	6900 2100 6900 2350
+Wire Wire Line
+	6900 2450 6250 2450
+Wire Wire Line
+	6050 2450 5950 2450
+Wire Wire Line
+	5950 2450 5950 2600
+Wire Wire Line
+	5950 2600 5850 2600
+Wire Wire Line
+	5850 1500 5850 2600
+$Comp
+L Device:C_Small C?
+U 1 1 5E282889
+P 6550 2350
+F 0 "C?" V 6600 2250 50  0000 C CNN
+F 1 "0.1u" V 6500 2500 50  0000 C CNN
+F 2 "" H 6550 2350 50  0001 C CNN
+F 3 "~" H 6550 2350 50  0001 C CNN
+	1    6550 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 2350 6900 2350
+Connection ~ 6900 2350
+Wire Wire Line
+	6900 2350 6900 2450
+Wire Wire Line
+	6450 2350 6150 2350
+Wire Wire Line
+	6150 2350 6150 2100
+Connection ~ 6150 2100
+Wire Wire Line
+	5150 800  5800 800 
+Connection ~ 5800 800 
+$Comp
+L Device:R_Small R?
+U 1 1 5E28289B
+P 6350 950
+F 0 "R?" V 6250 950 50  0000 C CNN
+F 1 "1M" V 6350 950 50  0000 C CNN
+F 2 "" H 6350 950 50  0001 C CNN
+F 3 "~" H 6350 950 50  0001 C CNN
+	1    6350 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 950  6900 950 
+$Comp
+L Aurora_Parts:DW01A U?
+U 1 1 5E2828A7
+P 7850 2100
+F 0 "U?" H 7850 2425 50  0000 C CNN
+F 1 "DW01A" H 7850 2334 50  0000 C CNN
+F 2 "" H 7850 1900 50  0001 C CNN
+F 3 "" H 7850 1900 50  0001 C CNN
+	1    7850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5E2828B1
+P 7750 4050
+F 0 "BT?" V 7600 4100 50  0000 C CNN
+F 1 "18650" V 7914 4100 50  0000 C CNN
+F 2 "" V 7750 4110 50  0001 C CNN
+F 3 "~" V 7750 4110 50  0001 C CNN
+	1    7750 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E2828BB
+P 7500 3750
+F 0 "R?" V 7600 3750 50  0000 C CNN
+F 1 "150" V 7500 3750 50  0000 C CNN
+F 2 "" H 7500 3750 50  0001 C CNN
+F 3 "~" H 7500 3750 50  0001 C CNN
+	1    7500 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5E2828C5
+P 7900 3650
+F 0 "Q?" V 7850 3450 50  0000 C CNN
+F 1 "SLS2302" V 8100 3400 50  0000 C CNN
+F 2 "" H 8100 3750 50  0001 C CNN
+F 3 "~" H 7900 3650 50  0001 C CNN
+	1    7900 3650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7600 3750 7650 3750
+Wire Wire Line
+	7400 3750 7350 3750
+Wire Wire Line
+	7250 3750 7250 4050
+Wire Wire Line
+	7250 4050 7550 4050
+Wire Wire Line
+	7850 4050 8250 4050
+Wire Wire Line
+	8250 4050 8250 3750
+Wire Wire Line
+	8250 3750 8100 3750
+$Comp
+L Aurora_Parts:HY2213 U?
+U 1 1 5E2828D6
+P 7800 3000
+F 0 "U?" V 7754 3188 50  0000 L CNN
+F 1 "HY2213" V 7845 3188 50  0000 L CNN
+F 2 "" H 7800 2850 50  0001 C CNN
+F 3 "" H 7800 2850 50  0001 C CNN
+	1    7800 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 3300 7900 3450
+$Comp
+L Device:R_Small R?
+U 1 1 5E2828E1
+P 7450 2600
+F 0 "R?" V 7550 2600 50  0000 C CNN
+F 1 "100" V 7450 2600 50  0000 C CNN
+F 2 "" H 7450 2600 50  0001 C CNN
+F 3 "~" H 7450 2600 50  0001 C CNN
+	1    7450 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 2700 7800 2600
+Wire Wire Line
+	7800 2600 7550 2600
+Wire Wire Line
+	7350 2600 7250 2600
+Wire Wire Line
+	7250 2600 7250 3750
+Connection ~ 7250 3750
+$Comp
+L Device:C_Small C?
+U 1 1 5E2828F0
+P 8050 2600
+F 0 "C?" V 8150 2600 50  0000 C CNN
+F 1 "0.1u" V 7950 2600 50  0000 C CNN
+F 2 "" H 8050 2600 50  0001 C CNN
+F 3 "~" H 8050 2600 50  0001 C CNN
+	1    8050 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 2600 7950 2600
+Connection ~ 7800 2600
+Wire Wire Line
+	8150 2600 8250 2600
+Wire Wire Line
+	8250 2600 8250 3750
+Connection ~ 8250 3750
+Wire Wire Line
+	8150 2000 8250 2000
+Wire Wire Line
+	8250 2000 8250 2600
+Connection ~ 8250 2600
+NoConn ~ 8150 2200
+Wire Wire Line
+	7550 2100 7450 2100
+Wire Wire Line
+	7450 2100 7450 1900
+Wire Wire Line
+	7450 1900 8250 1900
+Wire Wire Line
+	8250 1900 8250 2000
+Connection ~ 8250 2000
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 5E282908
+P 7350 1250
+F 0 "Q?" V 7300 1100 50  0000 C CNN
+F 1 "MMBT3906" V 7550 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7550 1175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 7350 1250 50  0001 L CNN
+	1    7350 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E282912
+P 7650 800
+F 0 "R?" V 7550 800 50  0000 C CNN
+F 1 "1M" V 7650 800 50  0000 C CNN
+F 2 "" H 7650 800 50  0001 C CNN
+F 3 "~" H 7650 800 50  0001 C CNN
+	1    7650 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E28291C
+P 7350 1650
+F 0 "R?" H 7291 1604 50  0000 R CNN
+F 1 "510k" H 7291 1695 50  0000 R CNN
+F 2 "" H 7350 1650 50  0001 C CNN
+F 3 "~" H 7350 1650 50  0001 C CNN
+	1    7350 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7350 1450 7350 1550
+Wire Wire Line
+	7350 1750 7350 2000
+Wire Wire Line
+	7350 2000 7550 2000
+Wire Wire Line
+	7150 1150 7100 1150
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 5E28292A
+P 7950 1250
+F 0 "Q?" V 7900 1400 50  0000 C CNN
+F 1 "MMBT3906" V 8150 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8150 1175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 7950 1250 50  0001 L CNN
+	1    7950 1250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E282934
+P 7950 1650
+F 0 "R?" H 7891 1604 50  0000 R CNN
+F 1 "510k" H 7891 1695 50  0000 R CNN
+F 2 "" H 7950 1650 50  0001 C CNN
+F 3 "~" H 7950 1650 50  0001 C CNN
+	1    7950 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7950 1450 7950 1550
+Wire Wire Line
+	7550 2200 7250 2200
+Wire Wire Line
+	7250 2200 7250 1800
+Wire Wire Line
+	7250 1800 7950 1800
+Wire Wire Line
+	7950 1800 7950 1750
+Wire Wire Line
+	7550 1150 7650 1150
+Wire Wire Line
+	7100 800  7550 800 
+Wire Wire Line
+	7650 1150 7650 1500
+Wire Wire Line
+	7650 1500 7150 1500
+Connection ~ 7650 1150
+Wire Wire Line
+	7650 1150 7750 1150
+Connection ~ 7250 2600
+Wire Wire Line
+	8200 950  8200 1150
+Wire Wire Line
+	8200 1150 8150 1150
+$Comp
+L Device:R_Small R?
+U 1 1 5E28294C
+P 7500 3600
+F 0 "R?" V 7400 3600 50  0000 C CNN
+F 1 "150" V 7500 3600 50  0000 C CNN
+F 2 "" H 7500 3600 50  0001 C CNN
+F 3 "~" H 7500 3600 50  0001 C CNN
+	1    7500 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 3600 7650 3600
+Wire Wire Line
+	7650 3600 7650 3750
+Connection ~ 7650 3750
+Wire Wire Line
+	7650 3750 7700 3750
+Wire Wire Line
+	7400 3600 7350 3600
+Wire Wire Line
+	7350 3600 7350 3750
+Connection ~ 7350 3750
+Wire Wire Line
+	7350 3750 7250 3750
+$Comp
+L Device:R_Small R?
+U 1 1 5E28295E
+P 7450 2450
+F 0 "R?" V 7400 2350 50  0000 C CNN
+F 1 "100" V 7450 2450 50  0000 C CNN
+F 2 "" H 7450 2450 50  0001 C CNN
+F 3 "~" H 7450 2450 50  0001 C CNN
+	1    7450 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 2100 8200 2100
+Wire Wire Line
+	8200 2100 8200 2350
+Wire Wire Line
+	8200 2450 7550 2450
+Wire Wire Line
+	7350 2450 7250 2450
+Wire Wire Line
+	7250 2450 7250 2600
+Wire Wire Line
+	7250 2600 7150 2600
+Wire Wire Line
+	7150 1500 7150 2600
+$Comp
+L Device:C_Small C?
+U 1 1 5E28296F
+P 7850 2350
+F 0 "C?" V 7900 2250 50  0000 C CNN
+F 1 "0.1u" V 7800 2500 50  0000 C CNN
+F 2 "" H 7850 2350 50  0001 C CNN
+F 3 "~" H 7850 2350 50  0001 C CNN
+	1    7850 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 2350 8200 2350
+Connection ~ 8200 2350
+Wire Wire Line
+	8200 2350 8200 2450
+Wire Wire Line
+	7750 2350 7450 2350
+Wire Wire Line
+	7450 2350 7450 2100
+Connection ~ 7450 2100
+$Comp
+L Aurora_Parts:DW01A U?
+U 1 1 5E28297F
+P 9150 2100
+F 0 "U?" H 9150 2425 50  0000 C CNN
+F 1 "DW01A" H 9150 2334 50  0000 C CNN
+F 2 "" H 9150 1900 50  0001 C CNN
+F 3 "" H 9150 1900 50  0001 C CNN
+	1    9150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5E282989
+P 9050 4050
+F 0 "BT?" V 8900 4100 50  0000 C CNN
+F 1 "18650" V 9214 4100 50  0000 C CNN
+F 2 "" V 9050 4110 50  0001 C CNN
+F 3 "~" V 9050 4110 50  0001 C CNN
+	1    9050 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E282993
+P 8800 3750
+F 0 "R?" V 8900 3750 50  0000 C CNN
+F 1 "150" V 8800 3750 50  0000 C CNN
+F 2 "" H 8800 3750 50  0001 C CNN
+F 3 "~" H 8800 3750 50  0001 C CNN
+	1    8800 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5E28299D
+P 9200 3650
+F 0 "Q?" V 9150 3450 50  0000 C CNN
+F 1 "SLS2302" V 9400 3400 50  0000 C CNN
+F 2 "" H 9400 3750 50  0001 C CNN
+F 3 "~" H 9200 3650 50  0001 C CNN
+	1    9200 3650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8900 3750 8950 3750
+Wire Wire Line
+	8700 3750 8650 3750
+Wire Wire Line
+	8550 3750 8550 4050
+Wire Wire Line
+	8550 4050 8850 4050
+Wire Wire Line
+	9150 4050 9550 4050
+Wire Wire Line
+	9550 4050 9550 3750
+Wire Wire Line
+	9550 3750 9400 3750
+$Comp
+L Aurora_Parts:HY2213 U?
+U 1 1 5E2829AE
+P 9100 3000
+F 0 "U?" V 9054 3188 50  0000 L CNN
+F 1 "HY2213" V 9145 3188 50  0000 L CNN
+F 2 "" H 9100 2850 50  0001 C CNN
+F 3 "" H 9100 2850 50  0001 C CNN
+	1    9100 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9200 3300 9200 3450
+$Comp
+L Device:R_Small R?
+U 1 1 5E2829B9
+P 8750 2600
+F 0 "R?" V 8850 2600 50  0000 C CNN
+F 1 "100" V 8750 2600 50  0000 C CNN
+F 2 "" H 8750 2600 50  0001 C CNN
+F 3 "~" H 8750 2600 50  0001 C CNN
+	1    8750 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 2700 9100 2600
+Wire Wire Line
+	9100 2600 8850 2600
+Wire Wire Line
+	8650 2600 8550 2600
+Wire Wire Line
+	8550 2600 8550 3750
+Connection ~ 8550 3750
+$Comp
+L Device:C_Small C?
+U 1 1 5E2829C8
+P 9350 2600
+F 0 "C?" V 9450 2600 50  0000 C CNN
+F 1 "0.1u" V 9250 2600 50  0000 C CNN
+F 2 "" H 9350 2600 50  0001 C CNN
+F 3 "~" H 9350 2600 50  0001 C CNN
+	1    9350 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 2600 9250 2600
+Connection ~ 9100 2600
+Wire Wire Line
+	9450 2600 9550 2600
+Wire Wire Line
+	9550 2600 9550 3750
+Connection ~ 9550 3750
+Wire Wire Line
+	9450 2000 9550 2000
+Wire Wire Line
+	9550 2000 9550 2600
+Connection ~ 9550 2600
+NoConn ~ 9450 2200
+Wire Wire Line
+	8850 2100 8750 2100
+Wire Wire Line
+	8750 2100 8750 1900
+Wire Wire Line
+	8750 1900 9550 1900
+Wire Wire Line
+	9550 1900 9550 2000
+Connection ~ 9550 2000
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 5E2829E0
+P 8650 1250
+F 0 "Q?" V 8600 1100 50  0000 C CNN
+F 1 "MMBT3906" V 8850 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8850 1175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 8650 1250 50  0001 L CNN
+	1    8650 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E2829EA
+P 8950 800
+F 0 "R?" V 8850 800 50  0000 C CNN
+F 1 "1M" V 8950 800 50  0000 C CNN
+F 2 "" H 8950 800 50  0001 C CNN
+F 3 "~" H 8950 800 50  0001 C CNN
+	1    8950 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E2829F4
+P 8650 1650
+F 0 "R?" H 8591 1604 50  0000 R CNN
+F 1 "510k" H 8591 1695 50  0000 R CNN
+F 2 "" H 8650 1650 50  0001 C CNN
+F 3 "~" H 8650 1650 50  0001 C CNN
+	1    8650 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8650 1450 8650 1550
+Wire Wire Line
+	8650 1750 8650 2000
+Wire Wire Line
+	8650 2000 8850 2000
+Wire Wire Line
+	8450 1150 8400 1150
+Wire Wire Line
+	8400 1150 8400 800 
+$Comp
+L Transistor_BJT:MMBT3906 Q?
+U 1 1 5E282A03
+P 9250 1250
+F 0 "Q?" V 9200 1400 50  0000 C CNN
+F 1 "MMBT3906" V 9450 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9450 1175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 9250 1250 50  0001 L CNN
+	1    9250 1250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E282A0D
+P 9250 1650
+F 0 "R?" H 9191 1604 50  0000 R CNN
+F 1 "510k" H 9191 1695 50  0000 R CNN
+F 2 "" H 9250 1650 50  0001 C CNN
+F 3 "~" H 9250 1650 50  0001 C CNN
+	1    9250 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9250 1450 9250 1550
+Wire Wire Line
+	8850 2200 8550 2200
+Wire Wire Line
+	8550 2200 8550 1800
+Wire Wire Line
+	8550 1800 9250 1800
+Wire Wire Line
+	9250 1800 9250 1750
+Wire Wire Line
+	8850 1150 8950 1150
+Wire Wire Line
+	8400 800  8850 800 
+Wire Wire Line
+	8950 1150 8950 1500
+Wire Wire Line
+	8950 1500 8450 1500
+Connection ~ 8950 1150
+Wire Wire Line
+	8950 1150 9050 1150
+Connection ~ 8550 2600
+Wire Wire Line
+	9500 950  9500 1150
+Wire Wire Line
+	9500 1150 9450 1150
+$Comp
+L Device:R_Small R?
+U 1 1 5E282A25
+P 8800 3600
+F 0 "R?" V 8700 3600 50  0000 C CNN
+F 1 "150" V 8800 3600 50  0000 C CNN
+F 2 "" H 8800 3600 50  0001 C CNN
+F 3 "~" H 8800 3600 50  0001 C CNN
+	1    8800 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 3600 8950 3600
+Wire Wire Line
+	8950 3600 8950 3750
+Connection ~ 8950 3750
+Wire Wire Line
+	8950 3750 9000 3750
+Wire Wire Line
+	8700 3600 8650 3600
+Wire Wire Line
+	8650 3600 8650 3750
+Connection ~ 8650 3750
+Wire Wire Line
+	8650 3750 8550 3750
+$Comp
+L Device:R_Small R?
+U 1 1 5E282A37
+P 8750 2450
+F 0 "R?" V 8700 2350 50  0000 C CNN
+F 1 "100" V 8750 2450 50  0000 C CNN
+F 2 "" H 8750 2450 50  0001 C CNN
+F 3 "~" H 8750 2450 50  0001 C CNN
+	1    8750 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9450 2100 9500 2100
+Wire Wire Line
+	9500 2100 9500 2350
+Wire Wire Line
+	9500 2450 8850 2450
+Wire Wire Line
+	8650 2450 8550 2450
+Wire Wire Line
+	8550 2450 8550 2600
+Wire Wire Line
+	8550 2600 8450 2600
+Wire Wire Line
+	8450 1500 8450 2600
+$Comp
+L Device:C_Small C?
+U 1 1 5E282A48
+P 9150 2350
+F 0 "C?" V 9200 2250 50  0000 C CNN
+F 1 "0.1u" V 9100 2500 50  0000 C CNN
+F 2 "" H 9150 2350 50  0001 C CNN
+F 3 "~" H 9150 2350 50  0001 C CNN
+	1    9150 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9250 2350 9500 2350
+Connection ~ 9500 2350
+Wire Wire Line
+	9500 2350 9500 2450
+Wire Wire Line
+	9050 2350 8750 2350
+Wire Wire Line
+	8750 2350 8750 2100
+Connection ~ 8750 2100
+$Comp
+L Device:R_Small R?
+U 1 1 5E282A58
+P 9800 950
+F 0 "R?" V 9700 950 50  0000 C CNN
+F 1 "1M" V 9800 950 50  0000 C CNN
+F 2 "" H 9800 950 50  0001 C CNN
+F 3 "~" H 9800 950 50  0001 C CNN
+	1    9800 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9500 950  9700 950 
+Wire Wire Line
+	7750 800  8400 800 
+Connection ~ 8400 800 
+$Comp
+L Device:R_Small R?
+U 1 1 5E282A65
+P 8950 950
+F 0 "R?" V 8850 950 50  0000 C CNN
+F 1 "1M" V 8950 950 50  0000 C CNN
+F 2 "" H 8950 950 50  0001 C CNN
+F 3 "~" H 8950 950 50  0001 C CNN
+	1    8950 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 950  8850 950 
+Wire Wire Line
+	9050 950  9500 950 
+Connection ~ 9500 950 
+Wire Wire Line
+	7100 800  7100 1150
+Wire Wire Line
+	6450 800  7100 800 
+Connection ~ 7100 800 
+$Comp
+L Device:R_Small R?
+U 1 1 5E282A75
+P 7650 950
+F 0 "R?" V 7550 950 50  0000 C CNN
+F 1 "1M" V 7650 950 50  0000 C CNN
+F 2 "" H 7650 950 50  0001 C CNN
+F 3 "~" H 7650 950 50  0001 C CNN
+	1    7650 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 950  7550 950 
+Connection ~ 6900 950 
+Wire Wire Line
+	7750 950  8200 950 
+Connection ~ 8200 950 
+Connection ~ 5800 950 
+Wire Wire Line
+	5800 950  5800 800 
+Wire Wire Line
+	5800 950  6000 950 
+Connection ~ 6000 950 
+Wire Wire Line
+	6000 950  6250 950 
+$EndSCHEMATC

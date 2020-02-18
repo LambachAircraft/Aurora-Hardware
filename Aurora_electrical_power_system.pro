@@ -1,4 +1,4 @@
-update=27/11/2019 21:30:16
+update=12/12/2019 12:11:04
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=C:/Users/midas/Desktop/lambach/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
